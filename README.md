@@ -1,4 +1,6 @@
-hugging-is-caring
-=================
+The Hugging is Caring App
+=========================
 
-Hugging is Caring, The App
+## Features
+
+The hugging is caring app allows you to schedule hugs with other people.
