@@ -1,0 +1,25 @@
+<%= form_for(@hug) do |f| %>
+  <% if @hug.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hug.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @hug.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :appointment %><br>
+    <%= f.date_field :appointment %>
+  </div>
+  <div class="field">
+    <%= f.label :special_requests %><br>
+    <%= f.text_field :special_requests %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
